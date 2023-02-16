@@ -1,0 +1,14 @@
+<div class="container mt-5">
+    <div class="d-flex justify-content-around">
+        <select [ngModel]="ofertaSec" (ngModelChange)="onChangeObj($event)" class="col-sm-4 custom-select" id="offers">
+            <option [ngValue]="oferta" *ngFor="let oferta of ofertas; let i=index;" >Oferta {{i + 1 }} </option>
+        </select>
+        <app-offer></app-offer>
+    </div>
+    <hr>
+    <div class="d-flex justify-content-around mt-5">
+        <app-characteristics></app-characteristics>
+        <app-prices></app-prices>
+    </div>
+
+</div>

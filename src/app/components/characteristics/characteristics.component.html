@@ -1,0 +1,16 @@
+<div class="form-group row ">
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Caracteristicas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let oferta of (ofertas$ | async)?.versions[0]?.characteristics">
+                <td *ngFor="let suboferta of oferta.versions">
+                    <span scope="row">{{suboferta.name}}</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

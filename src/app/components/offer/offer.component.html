@@ -1,0 +1,14 @@
+<div *ngIf="ofertas$ | async as off">
+    <div class="form-group row">
+        <label for="idOffer" class="col-sm-4 col-form-label">ID Oferta</label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control" disabled [value]="off.versions[0]?.id">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="nameOffer" class="col-sm-4 col-form-label">Nombre</label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control" disabled [value]="off.versions[0]?.name">
+        </div>
+    </div>
+</div>
