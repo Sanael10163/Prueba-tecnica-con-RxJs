@@ -1,3 +1,3 @@
 # PruebaRedux
 
-Prueba novatec claro
+Prueba tecnica hecha con angular y Rxjs 
